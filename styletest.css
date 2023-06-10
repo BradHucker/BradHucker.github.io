@@ -1,0 +1,219 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+/*all content is centered and given a max width*/
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+/*provides header background image sets its size and aligns text*/
+.header {
+  background: url(https://content.codecademy.com/projects/innovation-cloud/bg.jpg) no-repeat center center; 
+  background-size: cover;
+  height: 800px;
+  text-align: center; 
+}
+
+/*sets the margin above the header*/
+.header .container {
+  position: relative;
+  top: 200px;
+}
+
+/*SS landing page name*/
+.header h1 {
+  color: #fff;
+  line-height: 100px; 
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase; 
+}
+
+/*media queries used to assertain device type. E.G. width and height of viewport, width and height of device, orientation (is tablet/phone landscape or portrait?), resolution*/
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+/*sets text below title*/
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+/*learn more button*/
+.btn {
+  width: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+/*nav bar main*/
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+/*sets nav bar buttons' style*/
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+
+}
+
+/*nav bar blocks/buttons*/
+.nav ul li {
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+/*hover transition color*/
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+/*main text container*/
+.main .container {
+  margin: 80px auto;
+}
+
+/*logo*/
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+/*london bottom image*/
+.jumbotron {
+  background: url(https://content.codecademy.com/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+  background-size: cover;
+  height: 600px; 
+}
+
+/*margins for jumbo set by container*/
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+
+/*contact us*/
+.jumbotron h2 {
+  color: #fff;
+  text-align: left; 
+}
+
+/*contact details*/
+.jumbotron p {
+  color: #fff; 
+  text-align: left; 
+}
+
+
+/*back to top*/
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: left; 
+}
+
+/*black footer border*/
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+/*my info*/
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
+
+
+
+/*makes buttons fill trans square*/
+a.nav-link:link
+{
+   color: #ECF9FF;
+   text-decoration: none;
+   display: block;
+}
+a.nav-link:visited
+{
+   color: #ECF9FF;
+   text-decoration: none;
+   display: block;
+}
+a.nav-link:hover
+{
+   color: #ECF9FF;
+   text-decoration: none;
+   display: block;
+}
+a.nav-link:active
+{
+   color: #ECF9FF;
+   text-decoration: none;
+   display: block;
+}
+
+/*nav bar white background*/
+.nav ul li a.activepage  {
+  color: black;
+  background: white;
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  text-decoration: none;
+  display: block;
+}
